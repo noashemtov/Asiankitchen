@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>מטלת אמצע - המטבח האסייאתי </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <title>Asian Dishes Tabs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
+
+    <!-- CSS -->
+    <link href="styles/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/bootstrap.bundle.min.js"></script>
+    <script src="jScripts/javascript.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body lang="he" dir="rtl">
+    <header>
+        <nav>
+    <!-- כפתור של התפריט שיופיע במובייל -->
+        <button id="nav-button" class="btn-mobile hide" onclick="toggleNav()"><img src="images/nav-icon.svg"
+            alt="ניווט"></button>
+        
+    <!-- תפריט ניווט -->
+    <ul   id="main-nav" class="flex-container-nav hide-mobile">
+          <li> <a href="#" class="nav-item">דף בית</a></li> 
+          <li>  <a href="#" class="nav-item" style="font-weight: bold;">המטבח האסייתי</a></li> 
+          <li>     <a href="#" class="nav-item">המטבח האיטלקי</a></li> 
+            <li>   <a href="#" class="nav-item">המטבח המרוקאי</a></li> 
+        </ul>   <!--תמונה בחלק העליון של העמוד  -->
+    </nav>
+        <div class="imageHeader">
+            <img src="images/HeaderP.jpg" alt="המטבח האסייאתי">
+            <h1> המטבח האסייתי</h1>
+        </div>
+    </header>
+<!-- כפתור סינון -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            סנן
+        </button>
+        <ul class="dropdown-menu"="dropdownMenuButton  hide-mobile">
+            <li><a class="dropdown-item" href="#" data-country="all">הצג הכל</a></li>
+            <li><a class="dropdown-item" href="#" data-country="תאילנד">תאילנד</a></li>
+            <li><a class="dropdown-item" href="#" data-country="יפן">יפן</a></li>
+            <li><a class="dropdown-item" href="#" data-country="סין">סין</a></li>
+            <li><a class="dropdown-item" href="#" data-country="ויאטנם">ויאטנם</a></li>
+        </ul>
+    </div>
+
+        <!-- כרטיסיות -->
+    <div id="cardsContainer" class="accordion"></div>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
